@@ -1,4 +1,3 @@
-import { Button } from '@chakra-ui/button';
 import { Checkbox } from '@chakra-ui/checkbox';
 import { Box, Text } from '@chakra-ui/layout';
 import React, { useEffect, useState } from 'react';
@@ -15,7 +14,7 @@ export const Task = ({todo}) => {
     return (
         <Box mb={1} bgColor="lightcoral" p={2}>
             <Checkbox onChange={handleChecked} colorScheme="teal" isChecked={checked}>
-                <Text as={todo.completed && "del"}>{todo.content} <Button>edit</Button></Text>
+                <Text as={todo.completed && "del"}>{todo.content} </Text>
             </Checkbox>
         </Box>
     )
